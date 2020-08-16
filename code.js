@@ -19,8 +19,8 @@ var Code = {};
  * Lookup for names of supported languages.  Keys should be in ISO 639 format.
  */
 Code.LANGUAGE_NAME = {
-  'zh-hans': '简体中文', 
-  'en': 'English'
+  'en': 'English',
+  'zh-hans': '简体中文'
 };
 
 /**
@@ -192,14 +192,14 @@ Code.LANG = Code.getLang();
  * List of tab names.
  * @private
  */
-Code.TABS_ = ['blocks', 'javascript'];
+Code.TABS_ = ['blocks', 'javascript', 'php', 'python', 'dart', 'lua', 'xml'];
 
 /**
  * List of tab names with casing, for display in the UI.
  * @private
  */
 Code.TABS_DISPLAY_ = [
-  'Blocks', 'JavaScript',
+  'Blocks', 'JavaScript', 'PHP', 'Python', 'Dart', 'Lua', 'XML',
 ];
 
 Code.selected = 'blocks';
@@ -394,7 +394,7 @@ Code.init = function() {
            length: 3,
            colour: '#ccc',
            snap: true},
-       media: './media',
+       media: './media/',
        rtl: rtl,
        toolbox: toolboxXml,
        zoom:

@@ -10,6 +10,10 @@
   <script src="blockly_compressed.js"></script>
   <script src="blocks_compressed.js"></script>
   <script src="javascript_compressed.js"></script>
+  <script src="python_compressed.js"></script>
+  <script src="php_compressed.js"></script>
+  <script src="lua_compressed.js"></script>
+  <script src="dart_compressed.js"></script>
   <script src="code.js"></script>
 </head>
 <body>
@@ -17,7 +21,7 @@
     <tr>
       <td>
         <h1>
-          <span id="title"></span>
+          <span id="title">...</span>
         </h1>
       </td>
       <td class="farSide">
@@ -29,17 +33,23 @@
         <table width="100%">
           <tr id="tabRow" height="1em">
             <td id="tab_blocks" class="tabon">...</td>
+            <td class="tabmin tab_collapse">&nbsp;</td>
             <td id="tab_javascript" class="taboff tab_collapse">JavaScript</td>
-            <td id="tab_python"</td>
-            <td id="tab_php" </td>
-            <td id="tab_lua" </td>
-            <td id="tab_dart" </td>
-            <td id="tab_xml"</td>
+            <td class="tabmin tab_collapse">&nbsp;</td>
+            <td id="tab_python" class="taboff tab_collapse">Python</td>
+            <td class="tabmin tab_collapse">&nbsp;</td>
+            <td id="tab_php" class="taboff tab_collapse">PHP</td>
+            <td class="tabmin tab_collapse">&nbsp;</td>
+            <td id="tab_lua" class="taboff tab_collapse">Lua</td>
+            <td class="tabmin tab_collapse">&nbsp;</td>
+            <td id="tab_dart" class="taboff tab_collapse">Dart</td>
+            <td class="tabmin tab_collapse">&nbsp;</td>
+            <td id="tab_xml" class="taboff tab_collapse">XML</td>
             <td id="tab_code" class="taboff">
               <select id="code_menu"></select>
             </td>
             <td class="tabmax">
-                         <button id="trashButton" class="notext" title="...">
+              <button id="trashButton" class="notext" title="...">
                 <img src='1x1.gif' class="trash icon21">
               </button>
               <button id="linkButton" class="notext" title="...">
@@ -60,6 +70,11 @@
   </table>
   <div id="content_blocks" class="content"></div>
   <pre id="content_javascript" class="content prettyprint lang-js"></pre>
+  <pre id="content_python" class="content prettyprint lang-py"></pre>
+  <pre id="content_php" class="content prettyprint lang-php"></pre>
+  <pre id="content_lua" class="content prettyprint lang-lua"></pre>
+  <pre id="content_dart" class="content prettyprint lang-dart"></pre>
+  <textarea id="content_xml" class="content" wrap="off"></textarea>
 
   <xml xmlns="https://developers.google.com/blockly/xml" id="toolbox" style="display: none">
     <category name="%{BKY_CATLOGIC}" colour="%{BKY_LOGIC_HUE}">

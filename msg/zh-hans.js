@@ -1,6 +1,6 @@
 var MSG = {
   title: "Logo blockly For 王翊轩",
-  blocks: "积木块",
+  blocks: "块",
   linkTooltip: "保存模块并生成链接。",
   runTooltip: "运行积木块。",
   badCode: "程序错误：\n%1",
